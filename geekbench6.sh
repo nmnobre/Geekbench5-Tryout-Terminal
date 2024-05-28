@@ -4,7 +4,7 @@ then
     exit
 fi
 
-url=$(./geekbench5 | grep "claim?key" -m 1 | sed -e 's/^[ \t]*//')
+url=$(./geekbench6 | grep "claim?key" -m 1 | sed -e 's/^[ \t]*//')
 url_trim=$(echo $url | sed -e 's/claim.*//')
 
 if command -v wget &> /dev/null
